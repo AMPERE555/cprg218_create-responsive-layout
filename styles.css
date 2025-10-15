@@ -1,3 +1,29 @@
 *{
     box-sizing: border-box;
 }
+/*Mobile First Design*/
+
+body{
+    max-width:768px;
+    
+}
+
+header{
+    border: 1px solid rgb(255, 0, 0); /*remove later*/
+}
+
+div{
+    border: 1px solid blue; /*remove later*/
+}
+
+figure img{
+    border: 1px solid rgb(0, 255, 30); /*remove later*/
+}
+
+aside{
+    border: 1px solid rgb(238, 0, 255); /*remove later*/
+}
+
+footer{
+    border: 1px solid rgb(255, 128, 0); /*remove later*/
+}
