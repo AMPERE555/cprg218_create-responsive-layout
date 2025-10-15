@@ -5,12 +5,22 @@
 
 body{
     max-width:768px;
-    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 110%;
 }
 
 header{
     border: 1px solid rgb(255, 0, 0); /*remove later*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
 }
+header img{
+    flex:1;
+    max-width: 157px;
+}
+
 
 div{
     border: 1px solid blue; /*remove later*/
