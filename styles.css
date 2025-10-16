@@ -1,39 +1,57 @@
 *{
     box-sizing: border-box;
 }
-/*Mobile First Design*/
+/*Mobile First Design maxwidth 768px*/
 
 body{
-    max-width:768px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 110%;
+    font-family:Arial, Helvetica, Verdana, sans-serif;
+    margin:0;
 }
 
 header{
-    border: 1px solid rgb(255, 0, 0); /*remove later*/
+    background-color: #120323;
+    color:#97bf04;
     display: flex;
     flex-direction:column;
     align-items: center;
-
-}
-header img{
-    flex:1;
-    max-width: 157px;
+    padding: 1rem 0;
 }
 
-
-div{
-    border: 1px solid blue; /*remove later*/
+figure{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
 }
 
 figure img{
-    border: 1px solid rgb(0, 255, 30); /*remove later*/
+    border: 5px solid #d9043d; 
+    max-width: 100vw;
+    align-items: center;
+}
+
+figure h2{
+    color:#120323;
 }
 
 aside{
-    border: 1px solid rgb(238, 0, 255); /*remove later*/
+    background-color: #97bf04;
+    padding: 1.3rem 1rem;
 }
 
 footer{
-    border: 1px solid rgb(255, 128, 0); /*remove later*/
+    background-color: #d9043d;
+    color:white;
+    padding: 2rem;
+    text-align:center;
+    margin-top: 1rem;
 }
+
+/*Header Text wraps to the right after max-width 420px (YUCK!)*/
+@media screen and (max-width: 465px){
+    header{
+        font-size: 80%;
+    }
+}
+
+
+
