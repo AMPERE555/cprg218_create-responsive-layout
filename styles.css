@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-/*Mobile First Design maxwidth 768px*/
+/*Mobile First Design max-width 768px*/
 
 body{
     font-family:Arial, Helvetica, Verdana, sans-serif;
@@ -53,5 +53,52 @@ footer{
     }
 }
 
+/*Medium Screens*/
+@media screen and (min-width:768px){
+   
+    header{
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+    h1{
+        margin-left: 1rem;
+    }
+    figure{
+        flex-direction: row;
+        padding:2rem 0 1rem 0;
+    }
+    figure img{
+        max-width:320px;
+        max-height:320px;
+        margin-right:1rem;
+    }
+    figure h2{
+        margin:0;
+    }
+    footer{
+        margin-bottom:1rem;
+    }
+}
+
+@media screen and (min-width:1000px){
+
+    div#container{
+        display: flex;
+        flex-direction: row;
+        /*display: grid;
+        grid-template-columns: 3fr 1fr auto;*/
+    }
+
+    main {
+        flex:2;
+    }
+
+    aside{
+        flex:1;
+        padding: 1rem;
+        margin: 2rem 0 0 2rem;
+    }
+}
 
 
